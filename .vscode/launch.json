@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py", // Path to your manage.py file
+            "args": [
+                "runserver",
+                "--noreload" // Important: Disable the reloader for debugging
+            ],
+            "console": "integratedTerminal", // Or "externalTerminal"
+            "justMyCode": true, // Debug only your code, not Django's
+            "django": true // Important: Enable Django debugging features
+        }
+    ]
+}
